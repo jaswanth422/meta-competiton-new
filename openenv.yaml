@@ -1,0 +1,18 @@
+name: support-ops-openenv
+tagline: Deterministic customer-support triage environment for agent evaluation.
+description: |
+  A real-world inspired environment where an agent triages support tickets,
+  drafts user replies, and closes tickets. Includes deterministic tasks,
+  continuous reward shaping, and strict (0,1) task graders.
+version: 0.1.0
+entrypoint: server.app:app
+license: mit
+benchmarks:
+  - support_ops_v1
+tasks:
+  - id: easy_refund
+    difficulty: easy
+  - id: medium_shipping
+    difficulty: medium
+  - id: hard_multi_issue
+    difficulty: hard
